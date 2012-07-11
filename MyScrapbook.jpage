@@ -1,0 +1,1 @@
+ArrayList<Book> list = new ArrayList <Book>();Book b1 = new Book("Great exextation");Book b2 = new Book("War and peace");list.add(b1);list.add(b2);Person p1 = new Person();p1.setName("Fred");b1.setPerson(p1);list.remove(b1);list
