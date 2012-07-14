@@ -11,12 +11,11 @@ class CarPart{
 	  UnitPrice = j;
 	}
    public String toString() {
-   		return PartNumber + " " + PartName + " " + UnitPrice;
+        
+        System.out.println("Car Part Information");
+   		return "Part #:  "+ PartNumber + "\n" +"Description: "+ PartName + "\n" + "Unit Price " + UnitPrice;
     }
-	public void showPart(){
-	   System.out.println("Value of PartNumber ="+ PartNumber);
-	   System.out.println("Value of PartName ="+ PartName);
- }
+	
 }
 
 class Parts{
@@ -26,6 +25,7 @@ class Parts{
      parts.add(new CarPart(27487,"Clutch Disk",47.15));
      parts.add(new CarPart(87873,"Brake Disk",35.15));
      parts.add(new CarPart(27644,"A/C Filter Drier",55.55));
+     System.out.println("Number of Parts " + parts.size());
      for (CarPart element : parts) 
        System.out.println(element + "\n");
      parts.remove(0); 
